@@ -1,0 +1,65 @@
+.simpson-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, #87cefa, #fefefe);
+  min-height: 100vh;
+}
+
+
+.simpson-card {
+  background: #fffbe6;
+  padding: 1.2rem;
+  border-radius: 18px;
+  border: 3px solid #fdd835;
+  box-shadow: 0 0 15px rgba(255, 235, 59, 0.4);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+  img {
+    width: 70%;
+    margin-bottom: 0.8rem;
+    border-radius: 12px;
+    border: 4px solid #ffeb3b;
+    box-shadow: 0 0 12px rgba(255, 235, 59, 0.9);
+    background: #fff;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: #0d47a1;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 0.3rem;
+    font-family: "Comic Sans MS", cursive;
+  }
+
+  p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #37474f;
+    font-weight: 600;
+    font-family: "Comic Sans MS", cursive;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: #fdd835;
+    color: #0d47a1;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(253, 216, 53, 0.8);
+    transition: 0.2s ease;
+    font-family: "Comic Sans MS", cursive;
+  }
+
+  a:hover{
+    transform: scale(1.1);
+  }
+
+  .simpson-card:hover{
+    transform: scale(1.1);
+  }

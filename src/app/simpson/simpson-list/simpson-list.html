@@ -1,0 +1,12 @@
+<div class="simpson-list-container">
+
+  @for (pj of personajes; track pj.id) {
+    <div class="simpson-card">
+     <img src="https://cdn.thesimpsonsapi.com/500{{ pj.portrait_path }}" />
+      <h3>{{ pj.name }}</h3>
+
+      <a [routerLink]="['/simpsons', pj.id]">Ver detalle</a>
+    </div>
+  }
+
+</div>

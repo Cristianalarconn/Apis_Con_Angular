@@ -1,0 +1,65 @@
+        
+.rick-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rick-card {
+  background: rgba(0, 76, 255, 0.08);
+  border: 2px solid #32ff7e;
+  border-radius: 18px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.rick-card:hover {
+  transform: translateY(-6px) scale(1.03);
+
+}
+
+.rick-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  border: 3px solid #1aff66;
+
+}
+
+.rick-card h3 {
+  color: #000000;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 0 5px #24ff72;
+  font-weight: bold;
+}
+
+.rick-card p {
+  color: #000000;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.rick-card a {
+  display: inline-block;
+  background: #24ff72;
+  color: #000;
+  padding: 0.5rem 1.1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #24ff72;
+}
+
+.rick-card a:hover {
+  background: #00ff55;
+  box-shadow: 0 0 18px #00ff55;
+}
+
+
+

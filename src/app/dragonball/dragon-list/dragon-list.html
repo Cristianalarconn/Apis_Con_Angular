@@ -1,0 +1,13 @@
+<div class="dragon-list-container">
+
+  @for (pers of personajes; track pers.id) {
+    <div class="dragon-card">
+      <img [src]="pers.image" [alt]="pers.name" />
+      <h3>{{ pers.name }}</h3>
+      <p>{{ pers.race }}</p>
+
+      <a [routerLink]="['/dragonball', pers.id]">Ver detalle</a>
+    </div>
+  }
+
+</div>

@@ -1,0 +1,13 @@
+<div class="rick-list-container">
+
+  @for (pers of personajes; track pers.id) {
+    <div class="rick-card">
+      <img [src]="pers.image" [alt]="pers.name" />
+      <h3>{{ pers.name }}</h3>
+      <p>{{ pers.species }}</p>
+
+      <a [routerLink]="['/rickmorty', pers.id]">Ver detalle</a>
+    </div>
+  }
+
+</div>

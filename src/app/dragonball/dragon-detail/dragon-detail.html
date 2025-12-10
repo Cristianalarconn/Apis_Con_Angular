@@ -1,0 +1,24 @@
+<div class="dragon-detail-container" *ngIf="personajes as pj">
+
+  <div class="card">
+    <img [src]="pj.image" [alt]="pj.name" />
+
+    <h2>{{ pj.name }}</h2>
+
+    <p><strong>Raza:</strong> {{ pj.race }}</p>
+    <p><strong>Género:</strong> {{ pj.gender }}</p>
+    <p><strong>Afiliación:</strong> {{ pj.affiliation }}</p>
+    <p><strong>Ki:</strong> {{ pj.ki }} / {{ pj.maxKi }}</p>
+
+    <h3>Transformaciones</h3>
+    <div class="transformations">
+      @for (t of pj.transformations; track t.id) {
+        <div class="trans-card">
+          <img [src]="t.image" [alt]="t.name" />
+          <p>{{ t.name }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+</div>

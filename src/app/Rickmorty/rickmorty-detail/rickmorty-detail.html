@@ -1,0 +1,15 @@
+<div class="rick-detail-container">
+  
+  <div *ngIf="personajes as pj" class="card">
+    <img [src]="pj.image" [alt]="pj.name" />
+
+    <h2>{{ pj.name }}</h2>
+
+    <p><strong>Status:</strong> {{ pj.status }}</p>
+    <p><strong>Species:</strong> {{ pj.species }}</p>
+    <p><strong>Gender:</strong> {{ pj.gender }}</p>
+    <p><strong>Origin:</strong> {{ pj.origin.name }}</p>
+    <p><strong>Location:</strong> {{ pj.location.name }}</p>
+  </div>
+
+</div>

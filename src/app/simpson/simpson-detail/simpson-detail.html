@@ -1,0 +1,10 @@
+<div class="simpson-detail-container" *ngIf="personajes as pers">
+
+  <div class="card">
+     <img src="https://cdn.thesimpsonsapi.com/500{{ pers.portrait_path }}" />
+
+    <h2>{{ pers.name }}</h2>
+    <p>{{ pers.description }}</p>
+  </div>
+
+</div>
