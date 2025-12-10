@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+  import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SimpsonSimple } from '@app/modelos/simpson/SimpsonListModel';
 import { SimpsonApiServer } from '@app/services/Simpson/simpson-api-server';
